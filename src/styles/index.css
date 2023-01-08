@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One:300,300i,400,400i,600,700,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,700,800,800i");
+
+:root {
+  --primary-color: #994db1;
+}
+
+body {
+  background-color: #063829;
+  color: #f2f2f2;
+  font-family: "Poiret One", sans-serif;
+  background-image: url(../img/stimuxxiv_v13.png),url(../img/stimuxxiv_bg2.png);
+  background-repeat: no-repeat;
+  background-position: center top, center bottom;
+  background-size: contain,cover;
+  background-attachment: scroll, fixed;
+  font-size: 1.4rem;
+}
+
+header {
+  margin-top: 32vw;
+}
+
+h1 {
+  /* padding-bottom: 0.4em; */
+  letter-spacing: 2px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0.8em 0;
+}
+
+h2,
+h3,
+h4 {
+  color: var(--primary-color);
+  margin: 1em 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  margin: 0.8em 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+b,
+a,
+strong {
+  color: var(--primary-color);
+}
+
+li[class="active nav-item"] > a.nav-link {
+  color: var(--primary-color) !important;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+p {
+  letter-spacing: 2px;
+  line-height: 1.8rem;
+}
+
+p a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+hr {
+  background:  #f2f2f2;
+  margin: 2.5rem auto;
+  width: 60%;
+  min-width: 100px;
+  height: 0.8px;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#sponsor img {
+  max-height: 10rem;
+  max-width: 16rem;
+}
+
+.container {
+  padding: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+table { 
+margin-left: auto;
+margin-right: auto;
+}
+
+#sponsored-by {
+  color: #ccc;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+#sponsored-by:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -15px;
+  width: 0;
+  z-index: 1;
+  height: 0;
+  border-top: solid 20px var(--primary-color);
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+}
+
+.navbar-collapse {
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.bg-faded {
+  background-color: transparent;
+}
+
+#registration-navbar {
+  justify-content: center;
+  background-color: transparent;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+#form-container {
+  font-family: "Montserrat", sans-serif;
+  max-width: 700px;
+  margin: auto;
+}
+
+.payment-information p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  line-height: 2.2rem;
+  letter-spacing: normal;
+}
+
+Label {
+  text-align: left;
+}
+
+.main-content {
+  text-align: center;
+  padding: 0 1em;
+}
+
+@media (min-width: 991px) {
+  .main-content {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+#sponsor {
+  padding: 12px;
+  align-self: center;
+  opacity: 0.9;
+}
+
+#sponsor-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#table-container {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-content: center;
+}
+
+#participants-table {
+  align-self: center;
+}
+
+/* table overrides */
+
+.table {
+  color: #ddd;
+}
+
+.react-bs-table-container {
+  text-align: center;
+}
+.react-bs-container-header {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+}
+
+.react-bs-table-bordered {
+  border: 0 !important;
+}
+
+th,
+td {
+  text-align: center !important;
+  vertical-align: middle !important;
+  border: 0 !important;
+  border-bottom: 2px solid var(--primary-color) !important;
+  padding: 10px !important;
+}
+
+/* form styles */
+
+.form-control {
+  border-radius: 0;
+  background-color: white !important;
+  border: 0;
+  border-bottom: 3px solid #3a3bb7;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.form-control:focus {
+  border-bottom: 3px solid var(--primary-color);
+  color: black;
+  background-color: white;
+}
+
+.mad-field {
+  color: red;
+  display: inline;
+  font-size: 2em;
+  line-height: 0;
+}
+
+.form-check {
+  text-align: left;
+}
+
+.form-check input {
+  transform: scale(1.2);
+  padding-right: 2rem;
+}
+
+.form-check span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.col-form-label,
+label {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+small {
+  letter-spacing: 2px;
+  line-height: 1rem;
+}
+
+select {
+  border-radius: 0;
+}
+
+.navbar-toggler {
+  margin: auto;
+  border-color: rgb(255, 255, 255) !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+/* buttöön */
+
+.btn {
+  background-color: transparent;
+  border-radius: 0;
+  margin: 1em;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 1em 3em;
+  border: 3px solid var(--primary-color);
+  color: white;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border: 3px solid var(--primary-color);
+}
+
+/* modal */
+
+.modal-content {
+  background-color: #063829;
+  border: 3px solid var(--primary-color);
+}
+
+.justify-left {
+  justify-content: left;
+}
